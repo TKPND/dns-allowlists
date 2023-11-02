@@ -1,10 +1,10 @@
-# Title: Google Services Allowlist
-# Description: Allowance list to avoid glitches in the use of Google services.
-# Sources Android Enterprise: https://support.google.com/work/android/answer/10513641?hl=ja
-# Sources Chrome Enterprise: https://support.google.com/chrome/a/answer/6334001?hl=ja
-# Expires: 7 days
+! Title: Google Services Allowlist
+! Description: Allowance list to avoid glitches in the use of Google services.
+! Sources Android Enterprise: https://support.google.com/work/android/answer/10513641?hl=ja
+! Sources Chrome Enterprise: https://support.google.com/chrome/a/answer/6334001?hl=ja
+! Expires: 7 days
 
-# Android Enterprise
+! Android Enterprise
 @@|accounts.google.co.jp^$important
 @@|accounts.google.com^$important
 @@|accounts.youtube.com^$important
@@ -69,7 +69,7 @@
 @@|www.google.com^$important
 @@|www.googleapis.com^$important
 
-# Chrome Enterprise
+! Chrome Enterprise
 @@|*gstatic.com^$important
 @@|accounts.google.co.jp^$important
 @@|accounts.google.com^$important
@@ -132,7 +132,7 @@
 @@||gvt2.com^$important
 @@||gvt3.com^$important
 
-# Youtube
+! Youtube
 @@||googlevideo.com^$important
 @@||ytimg.com^$important
 @@|i.ytimg.com^$important
