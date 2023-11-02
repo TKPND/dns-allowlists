@@ -1,0 +1,195 @@
+# Title: Apple Services Allowlist
+# Description: Allowance list to avoid glitches in the use of Apple services.
+# Sources: https://support.apple.com/ja-jp/HT210060
+# Expires: 7 days
+
+# デバイスの設定
+# Apple 製デバイスの設定時や、オペレーティングシステムのインストール時、アップデート時、または復元時は、以下のホストへのアクセスが必要です。
+@@|albert.apple.com^$important
+@@|captive.apple.com^$important
+@@|gs.apple.com^$important
+@@|humb.apple.com^$important
+@@|static.ips.apple.com^$important
+@@|sq-device.apple.com^$important
+@@|tbsc.apple.com^$important
+@@|time-ios.apple.com^$important
+@@|time.apple.com^$important
+@@|time-macos.apple.com^$important
+
+# デバイス管理
+# MDM に登録されている Apple 製デバイスでは、以下のホストとドメインへのアクセスが必要です。
+@@||push.apple.com^$important
+@@|deviceenrollment.apple.com^$important
+@@|deviceservices-external.apple.com^$important
+@@|gdmf.apple.com^$important
+@@|identity.apple.com^$important
+@@|iprofiles.apple.com^$important
+@@|mdmenrollment.apple.com^$important
+@@|setup.icloud.com^$important
+@@|vpp.itunes.apple.com^$important
+
+# Apple Business Manager および Apple School Manager
+# Apple Business Manager および Apple School Manager を管理するため、管理者とマネージャには以下のホストとドメインへのアクセスが必要です。
+@@||business.apple.com^$important
+@@||school.apple.com^$important
+@@|appleid.cdn-apple.com^$important
+@@|idmsa.apple.com^$important
+@@||itunes.apple.com^$important
+@@||mzstatic.com^$important
+@@|api.ent.apple.com^$important
+@@|api.edu.apple.com^$important
+@@|statici.icloud.com^$important
+@@||vertexsmb.com^$important
+@@|www.apple.com^$important
+@@|upload.appleschoolcontent.com^$important
+@@|ws-ee-maidsvc.icloud.com^$important
+
+# Apple Business Essentials デバイス管理
+# 管理者と Apple Business Essentials で管理されているデバイスには、Apple Business Manager について上記に挙げられているホストとドメインに加え、以下のホストとドメインへのアクセスが必要です。
+@@|axm-adm-enroll.apple.com^$important
+@@|axm-adm-mdm.apple.com^$important
+@@|axm-adm-scep.apple.com^$important
+@@|axm-app.apple.com^$important
+@@||apple-mapkit.com^$important
+@@|icons.axm-usercontent-apple.com^$important
+
+# クラスルームとスクールワーク
+# クラスルーム App またはスクールワーク App を利用する生徒と教師のデバイスでは、下記の Apple ID と iCloud のセクションに挙げられているホストに加えて、以下のホストへのアクセスが必要です。
+@@|s.mzstatic.com^$important
+@@|play.itunes.apple.com^$important
+@@|ws-ee-maidsvc.icloud.com^$important
+@@|ws.school.apple.com^$important
+@@|pg-bootstrap.itunes.apple.com^$important
+@@|cls-iosclient.itunes.apple.com^$important
+@@|cls-ingest.itunes.apple.com^$important
+
+# ソフトウェアアップデート
+# macOS や Mac App Store の App をアップデートし、コンテンツキャッシュを使用するには、以下のポートにアクセスできるように徹底してください。
+# macOS、iOS、iPadOS、watchOS、tvOS
+# Apple 製デバイスでは、iOS、iPadOS、macOS、watchOS、tvOS のインストール時、復元時、アップデート時に、以下のホストへのアクセスが必要です。
+@@|appldnld.apple.com^$important
+@@|configuration.apple.com^$important
+@@|gdmf.apple.com^$important
+@@|gg.apple.com^$important
+@@|gs.apple.com^$important
+@@|ig.apple.com^$important
+@@|mesu.apple.com^$important
+@@|ns.itunes.apple.com^$important
+@@|oscdn.apple.com^$important
+@@|osrecovery.apple.com^$important
+@@|skl.apple.com^$important
+@@|swcdn.apple.com^$important
+@@|swdist.apple.com^$important
+@@|swdownload.apple.com^$important
+@@|swscan.apple.com^$important
+@@|updates-http.cdn-apple.com^$important
+@@|updates.cdn-apple.com^$important
+@@|xp.apple.com^$important
+
+# App Store
+# Apple 製デバイスでは、App のインストール時やアップデート時に、以下のホストとドメインへのアクセスが必要です。
+@@||itunes.apple.com^$important
+@@||apps.apple.com^$important
+@@||mzstatic.com^$important
+@@|itunes.apple.com^$important
+@@|ppq.apple.com^$important
+
+# キャリアアップデート
+# モバイルデータ通信対応のデバイスでは、キャリアバンドルのアップデートをインストールするために、以下のホストへのアクセスが必要です。
+@@|appldnld.apple.com^$important
+@@|appldnld.apple.com.edgesuite.net^$important
+@@|itunes.com^$important
+@@|itunes.apple.com^$important
+@@|updates-http.cdn-apple.com^$important
+@@|updates.cdn-apple.com^$important
+
+# コンテンツキャッシュ
+# コンテンツキャッシュを提供する Mac では、以下のホストと、この記事で挙げられているホストのうち、ソフトウェアアップデート、App、追加コンテンツなどの Apple のコンテンツを提供するホストにアクセスできることが必要です。
+@@|lcdn-registration.apple.com^$important
+@@|suconfig.apple.com^$important
+@@|xp-cdn.apple.com^$important
+
+# macOS のコンテンツキャッシュのクライアントは、以下のホストにアクセスできる必要があります
+@@|lcdn-locator.apple.com^$important
+@@|serverstatus.apple.com^$important
+
+# App の機能
+# Apple 製デバイスでは、一部の App の機能を使うために、以下のホストへのアクセスが適宜必要になります。
+@@|api.apple-cloudkit.com^$important
+@@||appattest.apple.com^$important
+
+# ベータアップデート
+# Apple 製のデバイスでは、ベータアップデートにサインインし、フィードバックアシスタント App を使ってフィードバックを報告するために、以下のホストへのアクセスが必要です。
+@@|bpapi.apple.com^$important
+@@|cssubmissions.apple.com^$important
+@@|fba.apple.com^$important
+
+# Apple 診断
+# Apple 製のデバイスは、ハードウェアの問題の兆候を検知する診断を実行するため、以下のポートにアクセスする可能性があります。
+@@|diagassets.apple.com^$important
+
+# DNS (Domain Name System) の名前解決
+# iOS 14、iPadOS 14、tvOS 14、macOS Big Sur 以降で DNS (Domain Name System) の名前解決を暗号化するため、以下のホストを使います。
+@@|doh.dns.apple.com^$important
+
+# 証明書の検証
+# この記事のホストで使われるデジタル証明書を検証するために、Apple 製のデバイスから以下のホストに接続できる必要があります。
+@@|certs.apple.com^$important
+@@|crl.apple.com^$important
+@@|crl.entrust.net^$important
+@@|crl3.digicert.com^$important
+@@|crl4.digicert.com^$important
+@@|ocsp.apple.com^$important
+@@|ocsp.digicert.cn^$important
+@@|ocsp.digicert.com^$important
+@@|ocsp.entrust.net^$important
+@@|ocsp2.apple.com^$important
+@@|valid.apple.com^$important
+
+# Apple ID
+# Apple 製のデバイスは、Apple ID を認証するために、以下のホストに接続できる必要があります。これは、Apple ID を使うすべてのサービス (iCloud、App のインストール、Xcode など) にとって必要です。
+@@|appleid.apple.com*^$important
+@@|appleid.cdn-apple.com^$important
+@@|idmsa.apple.com^$important
+@@|gsa.apple.com^$important
+
+# iCloud
+# iCloud のサービスを利用するため、Apple 製のデバイスから上記の Apple ID ホストに加えて、以下のドメインのホストに接続できる必要があります。
+@@||apple-cloudkit.com^$important
+@@||apple-livephotoskit.com^$important
+@@||apzones.com^$important
+@@||cdn-apple.com^$important
+@@||gc.apple.com^$important
+@@||icloud.com^$important
+@@||icloud.com.cn^$important
+@@||icloud.apple.com^$important
+@@||icloud-content.com^$important
+@@||iwork.apple.com^$important
+@@|mask.icloud.com^$important
+@@|mask-h2.icloud.com^$important
+@@|mask-api.icloud.com^$important
+
+# Siri と検索
+# Apple 製デバイスでは、Siri のリクエスト (音声入力、Apple 製 App の検索など) を処理するため、以下のホストに接続できる必要があります。
+@@|guzzoni.apple.com^$important
+@@||smoot.apple.com^$important
+
+# 関連ドメイン
+# Apple 製デバイスでは、iOS 14、iPadOS 14、macOS Big Sur 以降で関連ドメインを使うため、以下のホストに接続できる必要があります。関連ドメインは、ユニバーサルリンクの基盤です。ユニバーサルリンクは、Web サイトの全部または一部の代わりに App のコンテンツを提示できる機能です。Handoff、App Clip、シングルサインオン機能拡張はすべて関連ドメインを使用します。
+@@|app-site-association.cdn-apple.com^$important
+@@|app-site-association.networking.apple^$important
+
+# Tap to Pay on iPhone
+# 決済 App を使って非接触決済を行うには、iPhone から以下のホストに接続できる必要があります。
+@@|pos-device.apple.com^$important
+@@|humb.apple.com^$important
+@@|phonesubmissions.apple.com^$important
+
+# 追加のコンテンツ^$important
+# Apple 製のデバイスでは、追加のコンテンツをダウンロードするため、以下のホストに接続できる必要があります。一部の追加コンテンツは、他社のコンテンツ配布ネットワークでホストされている場合もあります。
+@@|audiocontentdownload.apple.com^$important
+@@|devimages-cdn.apple.com^$important
+@@|download.developer.apple.com^$important
+@@|playgrounds-assets-cdn.apple.com^$important
+@@|playgrounds-cdn.apple.com^$important
+@@|sylvan.apple.com^$important
